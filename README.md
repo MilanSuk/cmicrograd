@@ -17,7 +17,7 @@ Thanks, Andrej, I learned a lot!
 
 ## TODO
 - Windows OS support
-- read/write parameters on disc
+- read/write parameters on disk
 - add example - https://github.com/karpathy/micrograd/blob/master/demo.ipynb
 - more examples(recognizing handwritten numbers/letters, etc.)
 
