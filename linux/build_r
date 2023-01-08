@@ -1,0 +1,13 @@
+clear
+clear
+echo "\e[43m-- Compiling RELEASE version --\e[m"
+
+MAIN=" ../src/main.c "
+INCS=" "
+LIBS=" -lpthread -lm "
+OPTS=" -O3 "
+
+#compile with: 'clang' or 'gcc'
+echo "Building"
+gcc $INCS -march=native -no-pie -o cmicrograd_r $MAIN $LIBS $OPTS
+

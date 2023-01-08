@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "cmicrograd",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/bin/cmicrograd_linux64",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}/bin/",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "micrograd_gcc",
+			"miDebuggerPath": "/usr/bin/gdb"
+		}
+	]
+}

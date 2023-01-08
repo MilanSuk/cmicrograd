@@ -1,0 +1,3 @@
+valgrind --tool=massif ./cmicrograd_v
+
+

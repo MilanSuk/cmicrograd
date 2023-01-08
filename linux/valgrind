@@ -1,0 +1,5 @@
+clear
+clear
+valgrind --num-callers=30 --leak-check=full --track-origins=yes ./cmicrograd_v
+
+

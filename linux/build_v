@@ -1,0 +1,13 @@
+clear
+clear
+echo "\e[43m-- Compiling VALGRIND version --\e[m"
+
+MAIN=" ../src/main.c "
+INCS=" "
+LIBS=" -lpthread -lm "
+OPTS=" -Og -g -Wall -fno-omit-frame-pointer "
+
+#compile with: 'clang' or 'gcc'
+echo "Building"
+gcc $INCS -march=native -no-pie -o cmicrograd_v $MAIN $LIBS $OPTS
+
