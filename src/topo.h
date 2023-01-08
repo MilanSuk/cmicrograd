@@ -142,3 +142,13 @@ void Topo_update(Topo *self, const double val)
 			layer->values[ii]->data += val * layer->values[ii]->grad;
 	}
 }
+
+void Topo_print(Topo *self)
+{
+	printf("Num Layers: %d, Num Parameters: %d\n", self->num_layers, Topo_numParameters(self));
+	for (int i = 0; i < self->num_layers; i++)
+	{
+		TopoLayer *layer = &self->layers[i];
+		printf("[layer %d] Num parameters: %d\n", i, layer->num_values);
+	}
+}

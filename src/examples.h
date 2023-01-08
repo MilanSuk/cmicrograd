@@ -72,9 +72,9 @@ void example2(void)
 	TopoMT_delete(topoParalel);
 	Topo_delete(topo);
 
-	printf("g.data: %f == 24.7041\n", g->data);
-	printf("a.grad: %f == 138.8338\n", a->grad);
-	printf("b.grad: %f == 645.5773\n", b->grad);
+	printf("g.data: %.4f == 24.7041\n", g->data);
+	printf("a.grad: %.4f == 138.8338\n", a->grad);
+	printf("b.grad: %.4f == 645.5773\n", b->grad);
 
 	ValueAllocator_delete(va);
 }
@@ -142,9 +142,9 @@ void example4(void)
 	}
 	Topo *topoLoss = Topo_new(loss);
 
-	for (int j = 0; j < xs_n; j++)
-		printf("Number of MLP parameters: %d\n", Topo_numParameters(topoMLP[j]));
-	printf("Number of LOSS parameters: %d\n", Topo_numParameters(topoLoss));
+	//for (int j = 0; j < xs_n; j++)
+	//	Topo_print(topoMLP[j]);
+	//Topo_print(topoLoss);
 
 	// trains network
 	double st = Os_time();
