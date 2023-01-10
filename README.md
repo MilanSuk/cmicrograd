@@ -1,10 +1,15 @@
 
 # cmicrograd
-cmicrograd is full C implementation of Andrej Karpathy's(https://twitter.com/karpathy) micrograd(https://github.com/karpathy/micrograd).
+cmicrograd is C implementation of Andrej Karpathy's([Twitter](https://twitter.com/karpathy)) micrograd([GitHub repo](https://github.com/karpathy/micrograd)).
 
-This is my first interaction with neural networks. I don't speak Python very well, but luckily whole code is explained in the video "The spelled-out intro to neural networks and backpropagation- building micrograd"(https://www.youtube.com/watch?v=VMj-3S1tku0) and notebooks(https://github.com/karpathy/nn-zero-to-hero/tree/master/lectures/micrograd).
 
-Thanks, Andrej, I learned a lot!
+This is my first interaction with neural networks. The original Python code is well explained in the video ["The spelled-out intro to neural networks and backpropagation"](https://www.youtube.com/watch?v=VMj-3S1tku0) and [notebooks](https://github.com/karpathy/nn-zero-to-hero/tree/master/lectures/micrograd). Thanks, Andrej, I learned a lot!
+
+
+More visual explanations of what is a neural network, gradient descent and how backpropagation works can be found in [this series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi).
+
+
+The training loop is free of malloc() and free() for speed. The 'topo_mt.h' executes NN in multiple threads.
 
 
 
